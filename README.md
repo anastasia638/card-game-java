@@ -1,9 +1,10 @@
-# debilou-race
+# 🃏 Debilou Race Web Application
 
-![Language](https://img.shields.io/badge/language-Java-ED8B00?style=flat-square&logo=openjdk)
-![Paradigm](https://img.shields.io/badge/paradigm-OOP-blue?style=flat-square)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![MVC](https://img.shields.io/badge/Architecture-MVC-blue?style=flat-square)
+![SQL](https://img.shields.io/badge/Database-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-> A Java implementation of a card game featuring deck management, game rules enforcement and player interactions.
+> A web-based card game application built with PHP, MVC architecture, and SQL persistence.
 
 ---
 
@@ -11,60 +12,64 @@
 
 - [Overview](#overview)
 - [Features](#features)
-- [Game Rules](#game-rules)
 - [Project Structure](#project-structure)
 - [Technologies](#technologies)
 - [Build & Run](#build--run)
+- [Screenshots](#Screenshots)
 
 ---
 
 ## Overview
 
-This project implements a **debilou-race** in Java using object-oriented design. The game models a full deck of cards, handles shuffling and dealing, enforces game rules, manages player turns, and determines the winner.
+This project implements **Debilou Race** as a web application built with PHP.
 
-The focus is on clean OOP design: each entity (Card, Deck, Player, GameEngine) is a distinct class with well-defined responsibilities.
+It follows a **Model-View-Controller (MVC)** architecture to clearly separate business logic, presentation, and request handling:
+
+- **Models** manage data and game logic
+- **Views** handle the user interface
+- **Controllers** process actions and coordinate the application flow
+
+The project also integrates SQL scripts for data storage and uses CSS for the visual interface.
 
 ---
 
 ## Features
 
-- Standard 52-card deck with suits and ranks
-- Deck shuffling (Fisher-Yates algorithm)
-- Card dealing to players
-- Turn-based game flow
-- Rule enforcement and win condition detection
-- Multiple player support
-- Game state tracking
+- Card game logic and rule management
+- Web-based player interaction
+- MVC project organization
+- SQL database integration
+- Dynamic pages with PHP
+- Styled interface with CSS
+- Project documentation and installation files included
 
 ---
 
-## Game Rules
-
-The game follows classic card game rules:
-1. Each player is dealt a hand of cards
-2. Players take turns playing cards
-3. Rules define valid moves per turn
-4. The player who meets the win condition first wins
-5. Invalid moves are rejected with an error message
-
----
 
 ## Project Structure
 
 ```
 card-game-java/
-├── src/
-│   ├── main/
-│   │   ├── CardGame.java       # Entry point
-│   │   ├── Card.java           # Card model (suit + rank)
-│   │   ├── Deck.java           # Deck: shuffle, deal, draw
-│   │   ├── Hand.java           # Player's hand of cards
-│   │   ├── Player.java         # Player model
-│   │   ├── GameEngine.java     # Game loop and rule enforcement
-│   │   └── GameRules.java      # Configurable game rule definitions
-│   └── test/
-│       └── DeckTest.java       # Unit tests for deck operations
-├── pom.xml
+├── card-game-java/
+│   ├── controleurs/        # Application controllers
+│   ├── css/                # Stylesheets
+│   ├── img/                # Images and visual assets
+│   ├── inc/                # Includes and configuration files
+│   ├── modele/             # Data models and database logic
+│   ├── static/             # Shared layout components
+│   ├── vues/               # Application views
+│   ├── index.php           # Entry point
+│   ├── acceuil.png         # Interface preview
+│   ├── partie.png          # Interface preview
+│   ├── partie2.png         # Interface preview
+│   └── partie3.png         # Interface preview
+├── INSTALL.txt             # Installation instructions
+├── Rapport.pdf             # Project report
+├── SCHEMA.pdf              # Database schema documentation
+├── basedonée.sql           # Database script
+├── importation.sql         # Import script
+├── requete.sql             # SQL queries
+├── mode_Relationnel.pdf    # Relational model documentation
 └── README.md
 ```
 
@@ -74,10 +79,11 @@ card-game-java/
 
 | Technology | Role |
 |------------|------|
-| Java 17 | Core programming language |
-| OOP | Design paradigm |
-| Maven | Build and dependency management |
-| JUnit 5 | Unit testing |
+| PHP | Backend development |
+| MVC | Application architecture |
+| SQL | Database structure and persistence |
+| HTML/CSS | User interface and styling |
+| Apache / Local server | Local execution environment |
 
 ---
 
@@ -85,34 +91,34 @@ card-game-java/
 
 ### Prerequisites
 
-- Java 17+
-- Maven 3.x
+- A local PHP server environment (XAMPP, MAMP, WAMP, or equivalent)
+- MySQL / MariaDB
+- A web browser
 
-### Compile and Run
+### Setup
 
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/anastasia638/card-game-java.git
-cd card-game-java
-
-# Build and run
-mvn compile
-mvn exec:java -Dexec.mainClass="CardGame"
-
-# Run tests
-mvn test
 ```
-
 ---
 
 ## Skills Demonstrated
 
-- **Java OOP:** Classes, encapsulation, method design
-- **Algorithms:** Deck shuffling, game loop logic
-- **Data structures:** Collections for hand and deck management
-- **Unit testing:** JUnit for deck operations
+- **PHP** web development
+- **MVC** architecture
+- **SQL** database design and queries
+- Frontend integration with **HTML/CSS**
+- Application structuring and modularity
+- Documentation and project organization
 
 ---
+## Screenshots
+
+![Home Screen](card-game-java/acceuil.png)
+![Game Screen 1](card-game-java/partie.png)
+![Game Screen 2](card-game-java/partie2.png)
+![Game Screen 3](card-game-java/partie3.png)
 
 ## Author
 
