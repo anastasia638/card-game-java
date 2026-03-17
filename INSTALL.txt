@@ -1,0 +1,17 @@
+##############################################################
+# Fichier d'aide pour utiliser le site "BDWebAdmin"	         #
+# Cours de BDW1 - Bases de données et programmation web      #
+#  Université Claude Bernard Lyon 1         #
+##############################################################
+
+
+Pour utiliser ce site sur le serveur de l'UE (bdw.univ-lyon1.fr), quatre étapes :
+
+- éditer le fichier "includes/config-bd.php" et modifier les valeurs des constantes "UTILISATEUR", "MOTDEPASSE" et "BDD".
+
+- envoyer le répertoire "BDWebAdmin" sur le serveur (soit avec scp ou rsync en ligne de commande, soit avec un outil graphique comme FileZilla).
+
+- ouvrir un navigateur et saisir l'url "http://bdw.univ-lyon1.fr/p1234567/BDWebAdmin/" en ayant remplacé p1234567 par votre propre identifiant.
+
+Pour la réalisation de ce TP, à chaque fois qu'un mot de passe vous est demandé, il s'agit de celui stocké dans la cellule 'password' de TOMUSS.
+
