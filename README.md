@@ -115,10 +115,17 @@ git clone https://github.com/anastasia638/card-game-java.git
 ---
 ## Screenshots
 
-![Home Screen](card-game-java/acceuil.png)
-![Game Screen 1](card-game-java/partie.png)
-![Game Screen 2](card-game-java/partie2.png)
-![Game Screen 3](card-game-java/partie3.png)
+### Home
+![Home](card-game-java/acceuil.png)
+
+### Game 1
+![Game 1](card-game-java/partie.png)
+
+### Game 2
+![Game 2](card-game-java/partie2.png)
+
+### Game 3
+![Game 3](card-game-java/partie3.png)
 
 ## Author
 
