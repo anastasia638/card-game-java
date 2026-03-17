@@ -1,4 +1,4 @@
-# Card Game
+# debilou-race
 
 ![Language](https://img.shields.io/badge/language-Java-ED8B00?style=flat-square&logo=openjdk)
 ![Paradigm](https://img.shields.io/badge/paradigm-OOP-blue?style=flat-square)
@@ -20,7 +20,7 @@
 
 ## Overview
 
-This project implements a **card game** in Java using object-oriented design. The game models a full deck of cards, handles shuffling and dealing, enforces game rules, manages player turns, and determines the winner.
+This project implements a **debilou-race** in Java using object-oriented design. The game models a full deck of cards, handles shuffling and dealing, enforces game rules, manages player turns, and determines the winner.
 
 The focus is on clean OOP design: each entity (Card, Deck, Player, GameEngine) is a distinct class with well-defined responsibilities.
 
